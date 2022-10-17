@@ -1,0 +1,19 @@
+#Square brackets [] indicate a list, commas separate items
+bicycles = ['trek','cannondale','redline','specialized']
+
+#Index positions start at 0, not 1. Example:
+bicyles[0] = 'trike'
+print(bicycles)
+
+#Result: ['trike','cannondale','redline','specialized']
+
+#Append, Insert, and Pop. Example:
+
+bicycles.append('motorized')
+#Add 'motorized' to end of list
+
+bicycles.insert(2,'harley')
+#Add 'harley' to 3rd in list, because of index positions
+
+bicycles.pop()
+#Remove last item on list, but still workable.
