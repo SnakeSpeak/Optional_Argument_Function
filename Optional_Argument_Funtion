@@ -1,0 +1,13 @@
+#By assigning empty string to last parameter as default value, will read as FALSE.
+def formatted_name(first_name, last_name, middle_name = ''):
+	#If 'middle_name' not empty, will = TRUE.
+  if middle_name:
+		full_name = f"{first_name} {middle_name} {last_name}"
+	else:
+		full_name = f"{first_name} {last_name}"
+	return full_name.title()
+
+name = formatted_name('ed','magpantay')
+print(name)
+
+#Result: Ed Magpantay
