@@ -1,0 +1,15 @@
+def send_messages(texts,sent_texts):
+	while texts:
+		current_text = texts.pop()
+		print(f"Sending message: {current_text}")
+		sent_texts.append(current_text)
+
+def sent_messages(sent_texts):
+	print('The following texts have been sent: ')
+	for sent_text in sent_texts:
+		print(sent_text)
+
+texts=['omw','hi','wtf','ily','lol','haha','43FXQ69MMN']
+sent_texts=[]
+send_messages(texts,sent_texts)
+sent_messages(sent_texts)
