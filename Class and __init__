@@ -1,0 +1,25 @@
+class restaurant:
+	"""Attempt to model a restaurant."""
+
+	#Utilization of 
+	def __init__(self, name, cuisine_type):
+		"""Initiate a name and cuisine type."""
+		self.name = name
+		self.cuisine_type = cuisine_type
+	#Other methods	
+	def describe_restaurant(self):
+		print(f"\nThe restaurant's name is {self.name}.")
+		print(f"This restaurant serves {self.cuisine_type}!")
+
+	def open_restaurant(self):
+		print(f"{self.name} is now open and serving {self.cuisine_type}!")
+
+#Example instances below
+shantys = restaurant("Shanty's",'seafood')
+oconnors = restaurant("O'Connors",'Irish')
+pumpin = restaurant("Pumpin'",'American')
+
+#Example accessing of attributes
+shantys.describe_restaurant()
+oconnors.describe_restaurant()
+pumpin.describe_restaurant()
